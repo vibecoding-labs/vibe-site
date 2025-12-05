@@ -1,4 +1,4 @@
-# Legal Disclaimers
+# Legal
 
 **Last Updated:** December 5, 2025
 
