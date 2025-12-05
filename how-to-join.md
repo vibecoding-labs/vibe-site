@@ -1,4 +1,4 @@
-# Member NFTs
+# Membership
 
 Welcome! We're excited to have you join the Vibe Coding community. Follow these steps to become part of our vibrant ecosystem of programmers and developers on Solana.
 
