@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vibe Coding (VIBE) - An open source community for vibe coders and programmers on Solana">
+    <title>Vibe Coding - VIBE Token</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .ticker {
+            font-size: 1.5em;
+            color: #764ba2;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #666;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">VIBE</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.md">Resources</a></li>
+                    <li><a href="how-to-join.md">How to Join</a></li>
+                    <li><a href="legal.md">Legal</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Vibe Coding</h1>
+            <div class="ticker">$VIBE</div>
+            <p>An open source community for vibe coders and programmers on Solana. Access the community through digital passes, earn credential NFTs, contributor NFTs, and tier badges based on your expertise.</p>
+            <a href="how-to-join.md" class="cta-button">Join the Community</a>
+        </section>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎫</div>
+                <h3>Digital Passes</h3>
+                <p>Gain exclusive access to the Vibe Coding community through our digital pass system. Each pass unlocks unique opportunities and resources.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Credential NFTs</h3>
+                <p>Earn verifiable credential NFTs as you complete courses, challenges, and contribute to the community. Showcase your skills on-chain.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Contributor NFTs</h3>
+                <p>Make meaningful contributions to open source projects and receive special contributor NFTs that recognize your impact.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <h3>Tier Badges</h3>
+                <p>Level up your expertise and earn tier badges that reflect your knowledge and contributions to the Vibe Coding ecosystem.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Open Source</h3>
+                <p>Built on the principles of open source collaboration. Join a transparent, community-driven platform on Solana blockchain.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💜</div>
+                <h3>Vibe Community</h3>
+                <p>Connect with like-minded programmers, share knowledge, and build together in a supportive and innovative environment.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Vibe Coding. Built on Solana. | <a href="legal.md">Legal Disclaimers</a></p>
+        </footer>
+    </div>
+</body>
+</html>
